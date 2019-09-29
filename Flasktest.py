@@ -4,11 +4,6 @@ import Data
 
 app = Flask(__name__)
 
-dict ={
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964}
-
 Data.call_to_data()
 
 names = Data.name()
