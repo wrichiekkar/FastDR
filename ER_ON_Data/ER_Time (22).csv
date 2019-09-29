@@ -1,0 +1,27 @@
+﻿"Average time all patients waited for first assessment by a doctor in emergency, by hospital,  201807 to 201907"
+Average Time
+
+Hospital Name: Georgian Bay General Hospital - Midland Site
+"Month",Ontario (Hours),Georgian Bay General Hospital - Midland Site (Hours)
+"201807","1.5","1"
+"201808","1.5","1"
+"201809","1.5","1.1"
+"201810","1.5","1.1"
+"201811","1.5","1"
+"201812","1.6","1"
+"201901","1.6","1.1"
+"201902","1.6","1"
+"201903","1.6","1"
+"201904","1.6","1"
+"201905","1.6","1.1"
+"201906","1.6","1.1"
+"201907","1.6","1.1"
+
+TECHNICAL INFORMATION
+"Data source: National Ambulatory Care Reporting System (NACRS), Canadian Institute for Health Information (CIHI) provided by Cancer Care Ontario (CCO). For more information, please visit the Indicator Library for the technical description of Wait Time to First Assessment in Emergency indicator (average time and volume) and Length of Stay in Emergency indicators (average time, volume, and percentage within target). " 
+
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Average-time-PIA/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Volume-PIA/EN 
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Average-time-ED/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Volume-ED/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Percentage-within-target-ED/EN

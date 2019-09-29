@@ -1,0 +1,27 @@
+﻿"Average time all patients waited for first assessment by a doctor in emergency, by hospital,  201807 to 201907"
+Average Time
+
+Hospital Name: Trillium Health Partners - Queensway Health Centre
+"Month",Ontario (Hours),Trillium Health Partners - Queensway Health Centre (Hours)
+"201807","1.5","0.8"
+"201808","1.5","0.8"
+"201809","1.5","0.8"
+"201810","1.5","0.7"
+"201811","1.5","0.7"
+"201812","1.6","0.8"
+"201901","1.6","0.9"
+"201902","1.6","0.8"
+"201903","1.6","0.9"
+"201904","1.6","0.8"
+"201905","1.6","1"
+"201906","1.6","1"
+"201907","1.6","1"
+
+TECHNICAL INFORMATION
+"Data source: National Ambulatory Care Reporting System (NACRS), Canadian Institute for Health Information (CIHI) provided by Cancer Care Ontario (CCO). For more information, please visit the Indicator Library for the technical description of Wait Time to First Assessment in Emergency indicator (average time and volume) and Length of Stay in Emergency indicators (average time, volume, and percentage within target). " 
+
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Average-time-PIA/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Volume-PIA/EN 
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Average-time-ED/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Volume-ED/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Percentage-within-target-ED/EN

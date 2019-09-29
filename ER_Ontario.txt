@@ -1,0 +1,122 @@
+William Osler Health System - Etobicoke General, 0.5
+Huron Perth Healthcare Alliance : Clinton Public Hospital, 0.6
+Southlake Regional Health Centre, 0.7
+South Bruce Grey Health Centre - Durham, 0.7
+Grey Bruce Health Services - Markdale Site, 0.7
+William Osler Health System - Peel Memorial Center, 0.7
+Huron Perth Healthcare Alliance : Seaforth Community Hospital, 0.8
+Niagara Health System - Fort Erie Douglas, 0.8
+Niagara Health System - Port Colborne Site, 0.9
+South Bruce Grey Health Centre - Chesley, 0.9
+Sensenbrenner Hospital, 0.9
+Bluewater Health - Charlotte Eleanor Englehart (Petrolia), 0.9
+The Hospital For Sick Children, 1
+Scarborough and Rouge Hospital - Birchmount, 1
+St. Marys Memorial Hospital, 1
+Grey Bruce Health Services - Meaford Site, 1
+Hamilton Health Sciences Corp - McMaster Children's Hospital, 1
+Grey Bruce Health Services - Lions Head, 1
+Trillium Health Partners - Queensway Health Centre, 1
+Unity Health Toronto - St. Joseph's, 1.1
+Scarborough Health Network - Scarborough General Site, 1.1
+Mackenzie Health - Richmond Hill, 1.1
+West Nipissing General Hospital, 1.1
+Notre Dame Hospital, 1.1
+Collingwood General And Marine Hospital, 1.1
+Georgian Bay General Hospital - Midland Site, 1.1
+Mackenzie Health - Vaughan Site, 1.2
+Niagara Health System - Greater Niagara, 1.2
+Health Sciences North - Ramsay Lake Health Centre, 1.2
+Quinte Healthcare Corporation - Picton, 1.2
+Kingston Health Sciences Centre - Hotel Dieu, 1.2
+Timmins And District General Hospital, 1.2
+Scarborough Health Network - Centenary, 1.2
+Hanover And District Hospital, 1.2
+Markham Stouffville Hospital - Markham Site, 1.2
+Perth And Smiths Falls District Hospital - Perth Site, 1.2
+St. Joseph's Health Care System Hamilton - Charlton Campus, 1.3
+Woodstock General Hospital, 1.3
+South Bruce Grey Health Centre - Kincardine, 1.3
+Strathroy Middlesex General Hospital, 1.3
+Headwaters Health Care Centre - Orangeville Site, 1.3
+Huron Perth Healthcare Alliance : Stratford General Hospital, 1.3
+Lakeridge Health - Oshawa Site, 1.3
+Markham Stouffville Hospital - Uxbridge Site, 1.3
+Halton Healthcare Services Corp - Georgetown, 1.3
+Guelph General Hospital, 1.4
+South Bruce Grey Health Centre - Walkerton, 1.4
+Cambridge Memorial Hospital, 1.4
+Kingston Health Sciences Centre - Kingston General, 1.4
+Grey Bruce Health Services - Wiarton Site, 1.4
+Lakeridge Health - Port Perry, 1.4
+St. Mary's General Hospital, 1.4
+Brockville General Hospital - Charles ST Site, 1.4
+North York General Hospital - General Site, 1.4
+St. Joseph's Health Care London - St. Joseph's Hospital, 1.4
+Perth And Smiths Falls District Hospital - Smiths Falls Site, 1.4
+William Osler Health System - Brampton Civic, 1.4
+Sinai Health System - Mount Sinai Hospital, 1.5
+Alexandra Hospital, 1.5
+Peterborough Regional Health Centre, 1.5
+Quinte Healthcare Corporation - North Hastings, 1.5
+Orillia Soldiers' Memorial Hospital, 1.5
+Lakeridge Health - Bowmanville, 1.5
+Stevenson Memorial Hospital, 1.5
+London Health Sciences Centre - University Hospital, 1.5
+North Bay Regional Health Centre - North Bay Site, 1.5
+Hamilton Health Sciences Corp - West Lincoln Memorial Hospital, 1.5
+University Health Network - Toronto Western Hospital, 1.6
+Niagara Health System - Welland County, 1.6
+St. Thomas-Elgin General Hospital, 1.6
+Quinte Healthcare Corporation - Trenton, 1.6
+Hopital Montfort, 1.6
+Grey Bruce Health Services - Owen Sound, 1.6
+Grey Bruce Health Services - Southampton, 1.6
+Joseph Brant Hospital, 1.6
+Glengarry Memorial Hospital, 1.6
+Dryden Regional Health Centre, 1.6
+Thunder Bay Regional Health Sciences Centre, 1.6
+University Health Network - Toronto General Hospital, 1.7
+Unity Health Toronto - St. Michael's, 1.7
+Bluewater Health - Sarnia General Site, 1.7
+Halton Healthcare Services Corp - Milton, 1.7
+West Parry Sound Health Centre, 1.7
+Northumberland Hills Hospital, 1.7
+Temiskaming Hospital, 1.7
+Trillium Health Partners - Mississauga Hospital, 1.7
+Pembroke Regional Hospital, 1.8
+Chatham-Kent Health Alliance - Wallaceburg, 1.8
+Muskoka Algonquin Healthcare - Bracebridge, 1.8
+Queensway Carleton Hospital, 1.9
+Niagara Health System - St Catharines General, 1.9
+Lakeridge Health-Ajax Site, 1.9
+Ross Memorial Hospital, 1.9
+Halton Healthcare Services Corporation - Oakville-Trafalgar Memorial Hospital, 1.9
+London Health Sciences Centre - Victoria Hospital, 1.9
+Cornwall Community Hospital - Mcconnell Avenue Site, 1.9
+Sault Area Hospital - Sault Ste Marie, 2
+Campbellford Memorial Hospital, 2
+Erie Shores Healthcare, 2
+Groves Memorial Community Hospital, 2
+Lake Of The Woods District Hospital, 2
+Hamilton Health Sciences Corp - Hamilton General Hospital, 2
+Trillium Health Partners - Credit Valley Hospital, 2
+Royal Victoria Regional Health Centre, 2.1
+Lennox And Addington County General Hospital, 2.1
+Grand River Hospital Corp - Waterloo Site, 2.1
+Humber River Hospital - Wilson Site, 2.1
+Winchester District Memorial Hospital, 2.2
+Hamilton Health Sciences Corp - Juravinski Hospital, 2.2
+Muskoka Algonquin Healthcare - Huntsville District Memorial Hospital, 2.2
+Brant Community Healthcare System - Brantford General Hospital, 2.2
+Children's Hospital Of Eastern Ontario, 2.3
+Quinte Healthcare Corporation - Belleville, 2.3
+Norfolk General Hospital, 2.3
+Sunnybrook Health Sciences Centre, 2.3
+Toronto East Health Network - Michael Garron Hospital, 2.3
+Chatham-Kent Health Alliance - Chatham, 2.3
+Windsor Regional Hospital - Ouellette Campus, 2.3
+Windsor Regional Hospital - Metropolitan Campus, 2.8
+The Ottawa Hospital - Civic Campus, 3.2
+Hawkesbury And District General Hospital, 3.4
+The Ottawa Hospital - General Campus, 3.6

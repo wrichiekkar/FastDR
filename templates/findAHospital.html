@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Find an ER!</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+    type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template-->
+  <link href="{{ url_for('static', filename='css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+  <!-- Custom scripts for all pages-->
+  <!-- <script src="js/maps.js"></script> -->
+  <script src="{{url_for('static', filename='js/maps.js') }}"></script>
+
+  <!-- MAps -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgYvR_kr-SFcn0HYOIT9PuAAGziAq4VTo&callback=initMap">
+    </script>
+  <script>
+
+  </script>
+
+
+</head>
+
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../#">
+        <div class="sidebar-brand-icon" >
+          <!-- <img src="../"> -->
+          <img src="/static/logo.png" style="height:70px; width:auto;">
+        </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0" />
+
+      <!-- Nav Item - Near Me -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Find a hospital</span></a>
+      </li>
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Reason for visit
+      </div>
+
+
+      <!-- Nav Item - Emerngency -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Emergency</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Specialist or Surgery</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Diagnostic Imaging</span></a>
+      </li>
+
+
+
+
+      <!-- Nav Item - Tables -->
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block" />
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div id="content">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <!-- Search form -->
+          <form class="col-md-12">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for a hospital"
+                aria-label="Search" aria-describedby="basic-addon2" />
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <!-- <p> {{ names }} </p> -->
+            <!-- <h1 class="h3 mb-0 text-gray-800">Near Me</h1> -->
+            <!-- <p> {{ names[0] }} </p> -->
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card blue-grey lighten-5">
+                <div class="card-body text-center">
+                  <h3 class="indigo-text mt-4">
+                    <strong>Your Location: </strong>
+
+                    <form>
+                      <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" id="formLocation"
+                          placeholder="Enter your address" value="" aria-label="Search"
+                          aria-describedby="basic-addon2" />
+
+
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button" onclick="initMap()">
+                            <i class="fas fa-map-marker-alt"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+
+                    <!-- <span id="userLocation">location</span> -->
+
+                  </h3>
+                  <h3 class="indigo-text mt-4">
+                    <strong>Range: </strong>
+                    <span id="rangeValue"></span>
+                    km
+                  </h3>
+                  <div>
+                    <span>0 km </span>
+                    <input type="range" min="1" max="100" value="60" class="slider" id="myRange" />
+                    <span>100 km </span>
+                  </div>
+                  <br>
+                  <div>
+                    <span>Sort By:
+                      <select id="filter" style="color: #fff;
+                        background-color: #4e73df;
+                        border-color: #4e73df;
+                        border-radius: .35rem;
+                        padding-left: 10px;
+                        ">
+                        <option value="0" style=" border-radius: .35rem;">Wait Time </option>
+                        <option value="1">Distance</i></option>
+                      </select>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row" id="calculatedData" style="padding-top:1em ; ">
+            <!-- Content Column -->
+            <div class="col-md-6 mb-4">
+              <!-- Hospitals Card Example -->
+              <a href="https://www.google.com/maps/dir/43.7225925,-79.2625359/william+osler+hospital/@43.72665,-79.7192843,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882b3a53ecf03e27:0x608712ee60736bec!2m2!1d-79.5984363!2d43.7292944" target="#">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">{{ names[0] }} <span style="float: right;"><i class="fas fa-star"></i><i class="fas fa-star"></i></span></h6>
+                  </div>
+
+                  <div class="card-body">
+                    <div style="padding-bottom:1em">
+                      <h4 class="small font-weight-bold">
+                        <span class="float-right" style="padding-left: 10px">{{total[0]}} mins</span>
+                      </h4>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar"
+                          style="width:47%; background:#6589cd;">
+                          {{travel[0]}} min Drive
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar"
+                          style="width:53%; background:#21467B;">
+                          {{wait[0]}} min wait
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://www.google.com/maps/dir/43.6411989,-79.3787499/the+hospital+for+sick+children/@43.649214,-79.3918883,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882b34c9b2253cc9:0xd626f96dbbd306cf!2m2!1d-79.3875399!2d43.6573521" target="#">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">{{ names[1] }} <span style="float: right;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></h6>
+                  </div>
+
+                  <div class="card-body">
+                    <div style="padding-bottom:1em">
+                      <h4 class="small font-weight-bold">
+                        <span class="float-right" style="padding-left: 10px">{{total[1]}} mins</span>
+                      </h4>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar"
+                          style="width:20%; background:#6589cd;">
+                          {{travel[1]}} min Drive
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar"
+                          style="width:80%; background: #21467B;">
+                          {{wait[1]}} min wait
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://www.google.com/maps/dir/43.6411989,-79.3787499/peel+memorial/@43.6453276,-79.8512697,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x882b15929280ec87:0x41543a235f264bb3!2m2!1d-79.7514232!2d43.690461" target="#">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">{{ names[2] }} <span style="float: right;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></h6>
+                  </div>
+
+                  <div class="card-body">
+                    <div style="padding-bottom:1em">
+                      <h4 class="small font-weight-bold">
+                        <span class="float-right" style="padding-left: 10px">{{total[2]}} mins</span>
+                      </h4>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar"
+                          style="width:41%; background:#6589cd;">
+                          {{travel[2]}} min Drive
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar"
+                          style="width:59%; background:#21467B;">
+                          {{wait[2]}} min wait
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 style="text-align:center" class="m-0 font-weight-bold text-primary">Wait Times for <br>{{ names[0] }}</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- End of Main Content -->
+      </div>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; AmpHacks 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+    <!-- End of Content Wrapper -->
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+
+  <!-- Bootstrap core JavaScript-->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="{{
+      url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- Core plugin JavaScript-->
+  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+  <script src="{{url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+  <!-- Custom scripts for all pages-->
+  <!-- <script src="js/sb-admin-2.min.js"></script> -->
+  <script src="{{url_for('static', filename='js/sb-admin-2.min.js') }}"></script>
+
+  <!-- Page level plugins -->
+  <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
+  <script src="{{url_for('static', filename='vendor/chart.js/Chart.min.js') }}"></script>
+
+  <!-- Page level custom scripts -->
+  <!-- <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script> -->
+
+  <script>
+    document.getElementById('calculatedData').style.visibility = "hidden";
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("rangeValue");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+
+    };
+  </script>
+
+  <!-- <script src="js/demo/chart-bar-demo.js"></script> -->
+
+  <script src="{{url_for('static', filename='js/demo/chart-bar-demo.js') }}"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+
+  <script type="text/javascript">
+    $(document).ready(() => {
+      $("#select").val('1');
+    });      
+  </script>
+
+
+</body>
+
+</html>

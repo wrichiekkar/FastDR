@@ -1,0 +1,27 @@
+﻿"Average time all patients waited for first assessment by a doctor in emergency, by hospital,  201807 to 201907"
+Average Time
+
+Hospital Name: Brockville General Hospital - Charles ST Site
+"Month",Ontario (Hours),Brockville General Hospital - Charles ST Site (Hours)
+"201807","1.5","1.5"
+"201808","1.5","1.4"
+"201809","1.5","1.6"
+"201810","1.5","1.6"
+"201811","1.5","1.4"
+"201812","1.6","1.6"
+"201901","1.6","1.4"
+"201902","1.6","1.3"
+"201903","1.6","1.4"
+"201904","1.6","1.5"
+"201905","1.6","RI: Reporting or data quality issues"
+"201906","1.6","RI: Reporting or data quality issues"
+"201907","1.6","1.4"
+
+TECHNICAL INFORMATION
+"Data source: National Ambulatory Care Reporting System (NACRS), Canadian Institute for Health Information (CIHI) provided by Cancer Care Ontario (CCO). For more information, please visit the Indicator Library for the technical description of Wait Time to First Assessment in Emergency indicator (average time and volume) and Length of Stay in Emergency indicators (average time, volume, and percentage within target). " 
+
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Average-time-PIA/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Volume-PIA/EN 
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Average-time-ED/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Volume-ED/EN
+http://indicatorlibrary.hqontario.ca/Indicator/Detailed/Percentage-within-target-ED/EN
